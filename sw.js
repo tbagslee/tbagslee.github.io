@@ -41,7 +41,7 @@ workbox.routing.registerRoute(new RegExp('/.*\\.json'), workbox.strategies.cache
   plugins: [ new workbox.expiration.Plugin({ maxAgeSeconds: 14400 }) ],
 }));
 
-workbox.routing.registerRoute(new RegExp('/.*(:?/[^\\.]*/?)$'), function(context) {
+workbox.routing.registerRoute(new RegExp('/tbaglee.gitee.io/.*(:?/[^\\.]*/?)$'), function(context) {
   var url = context.url.pathname;
   if (!url.endsWith('/')) url += '/';
   return fetch(url);
