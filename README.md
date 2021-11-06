@@ -28,7 +28,7 @@
 
 ### 效果图
 
-![效果图](images/demo.png)
+![效果图](images/demo.jpg)
 
 ### 注
 
